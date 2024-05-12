@@ -10,6 +10,7 @@ import { HttpErrorFilter } from './shared/http.error.filter';
 import { LoggingInterceptor } from './shared/logging.interceptor';
 import { ValidationPipe } from './shared/validation.pipe';
 import { UtilService } from './shared/util.service';
+import { CommentModule } from './comment/comment.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { UtilService } from './shared/util.service';
     }),
     IdeaModule,
     UserModule,
+    CommentModule,
   ],
   controllers: [AppController],
   providers: [
